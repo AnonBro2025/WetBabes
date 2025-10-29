@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="theme-color" content="#0f1020">
+  <title>Splash City</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="game"></canvas>
+    <header class="hud glass">
+      <div class="brand">💦 Splash City</div>
+      <div class="stats">
+        <span id="score">0</span>
+        <span class="dot">•</span>
+        <span id="timer">60</span>s
+      </div>
+      <button id="menuBtn" class="icon-btn" aria-label="Menu">⋮</button>
+    </header>
+
+    <div id="menu" class="panel glass hidden">
+      <div class="panel-row">
+        <label class="switch">
+          <input id="soundToggle" type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+        <span>Sound</span>
+      </div>
+      <div class="panel-row">
+        <label class="switch">
+          <input id="hapticsToggle" type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+        <span>Haptics</span>
+      </div>
+      <div class="panel-row compact">
+        <small>Tip: put images in <code>/assets/babes</code>. This build auto-tries <code>babe1..12</code> with <code>.jpeg/.jpg/.png/.webp</code>.</small>
+      </div>
+    </div>
+
+    <div id="startScreen" class="center glass">
+      <h1>💦 Splash City</h1>
+      <p>Tap and hold to fire your water gun. Soak the models to score. Combo for multipliers.</p>
+      <button id="startBtn" class="cta">Start</button>
+    </div>
+
+    <div id="warn" class="warn glass hidden"></div>
+
+    <footer class="footer glass">
+      <button id="reloadBtn" class="pill">↻ Replay</button>
+      <div class="divider"></div>
+      <a class="pill" href="https://github.com/" target="_blank" rel="noopener">GitHub Pages Ready</a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
