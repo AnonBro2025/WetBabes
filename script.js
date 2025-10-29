@@ -92,9 +92,9 @@
 
   // Robust preload: your specific names + auto-try patterns
   const prefer = [
-    "assets/babes/babe1.jpeg",
-    "assets/babes/babe2.jpeg",
-    "assets/babes/babe3.jpeg",
+    "babe1.jpeg",
+    "babe2.jpeg",
+    "babe3.jpeg",
   ];
   const guesses=[];
   const exts=["jpeg","jpg","png","webp"];
